@@ -1,0 +1,333 @@
+     /* Extra resets */
+
+     /* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+     /* My comment*/
+
+    /* Typograghy */
+
+p {
+    line-height: 2;
+    text-align: center;
+    font-size: 23px;
+    color: black;
+}
+
+
+h2 {
+    font-size:45px;
+    padding: 35px;
+    color: black;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+.style p {
+    padding: 30px;
+}
+
+h3 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+footer  {
+    display:flex;
+    padding-top: 70px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #242424;
+    color: white;
+    min-height: 325px;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+}
+
+footer p {
+    line-height: 1.4;
+}
+
+
+.socialmedialogos  i {
+    color: white;
+    padding-bottom: 15px;
+    display: inline-block;
+    width: 15px;
+    justify-content: space-around;
+}
+
+/* Common Layout Classes */
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto; /* to center the element! */
+    background-color:white; /*remove later! */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-small {
+    width: 720px;
+    margin: 0 auto; /* to center the element! */
+    background-color: black; /*remove later! */
+}
+
+/* header area*/
+ header section {
+    padding-left: 10px;
+    padding-right: 10px; 
+    margin-bottom: 15px;
+    margin: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+header a {
+        color: #b64036;
+        display: flex;
+        justify-content: space-evenly;
+    
+}
+
+/*banner area */
+.bannerheader {
+    border-top: 1px solid #d7d7d7;
+    padding: 290px;
+    height: 150px;
+    background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat; 
+    background-position: center 100px, bottom;
+    background-size: contain, cover;
+    position: relative;
+}
+
+.bannerheader h2 {
+    color: white;  
+    padding: 40px;
+    font-size: 25px;
+
+}
+
+.bannerheader h3 {
+    color: white;
+    font-family: 'Playfair Display';
+    font-size:65px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #b64036;
+}
+
+link:hover {
+    color: #b64036;
+}
+
+.alohaproducts-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 45px;
+}
+
+.product-item {
+    max-width: 50%;
+    width:100%;
+}
+
+.product-item-square {
+    max-width: 25%;
+}
+
+.mens-image {
+    /* max-width: 50%; */
+    padding: 175px 0;
+    color: white;
+    display: flex;
+    background-image: url(../images/mens-category.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    justify-content: center;
+}
+
+.trends-image {
+    /* max-width: 25%; */
+    padding: 170px 0;
+    border-left: 4px solid white;
+    color: white;
+    display: flex;
+    background-image: url(../images/trends-category.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    justify-content: center;
+}
+
+.glasses-image {
+    /* max-width: 25%; */
+    padding: 170px 0;
+    border-left: 4px solid white;
+    color: white;
+    display: flex;
+    background-image: url(../images/glasses-category.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    justify-content: center;
+}
+
+.sale-image {
+    /* max-width: 25%; */
+    padding: 175px 0;
+    color: white;
+    display: flex;
+    background-image: url(../images/sale-category.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    justify-content: center;
+}
+
+.bags-image {
+    /* max-width: 25%; */
+    padding: 175px 0;
+    color: white;
+    display: flex;
+    background-image: url(../images/bags-category.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+.womens-image {
+    /* max-width: 50%; */
+    padding: 200px 0;
+    color: white;
+    display: flex;
+    background-image: url(../images/womens-category.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    justify-content: center;
+}
+
+.logo {
+    width: 175px;
+}
+
+.cart {
+    width: 65px;
+}
+
+.nav {
+    display: flex;
+    margin: 15px;
+    padding-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+
+.nav-container {
+    flex-grow: 1;  
+}
+
+.footercopyright p {
+    color: white;
+    font-size: 16px;
+}
+
+.footerbottom p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.footerwebsite  p, .footerwebsite a {
+    color: white;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+.addy p {
+    color: #969696;
+}
+
+.updates {
+    min-height: 340px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-image: url(../images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    line-height: 2;
+    font-size: 20px; 
+
+}
+
+.updates h2{
+    color: white;
+    padding-top:  0px;
+}
+
+.updates p{
+    padding-bottom: 12px;
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.updates-form {
+    font-size: 20px;
+    color:white;
+}
+
+input {
+    background-color: white;
+    font-size: 25px;
+    background-color: #b64036;
+}
+
+
+body {
+    font-family: 'Raleway';
+    /*font-weight: bold;  /*remove later! */
+    
+}
+
+.fas {
+    color: white;
+}
+
+.loved-products {
+    padding: 0px;
+}
+
+
+
+
+
