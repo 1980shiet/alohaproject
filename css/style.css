@@ -159,6 +159,7 @@ link:hover {
     /* max-width: 50%; */
     padding: 175px 0;
     color: white;
+    border-right: 4x solid white;
     display: flex;
     background-image: url(../images/mens-category.jpg);
     background-repeat: no-repeat;
@@ -169,20 +170,20 @@ link:hover {
 
 .trends-image {
     /* max-width: 25%; */
-    padding: 170px 0;
+    padding: 175px 0;
     border-left: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/trends-category.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
 }
 
 .glasses-image {
     /* max-width: 25%; */
-    padding: 170px 0;
+    padding: 175px 0;
     border-left: 4px solid white;
     color: white;
     display: flex;
@@ -196,6 +197,7 @@ link:hover {
 .sale-image {
     /* max-width: 25%; */
     padding: 175px 0;
+    border-right: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/sale-category.jpg);
@@ -208,6 +210,8 @@ link:hover {
 .bags-image {
     /* max-width: 25%; */
     padding: 175px 0;
+    border-right: 4px solid white;
+    border-left: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/bags-category.jpg);
@@ -219,7 +223,8 @@ link:hover {
 
 .womens-image {
     /* max-width: 50%; */
-    padding: 200px 0;
+    padding: 175px 0;
+    border-left: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/womens-category.jpg);
