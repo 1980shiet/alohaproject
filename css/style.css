@@ -13,6 +13,10 @@ html {
 
     /* Typograghy */
 
+img {
+    max-width: 100%;
+}
+
 p {
     line-height: 2;
     text-align: center;
@@ -29,18 +33,19 @@ h2 {
     font-family: 'Playfair Display';
 }
 
+
+h3 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
 .style p {
     padding-bottom: 25px;
     margin: 0 auto;
     max-width: 850px;
     display: flex;
     justify-content: center;
-}
-
-h3 {
-    font-size: 45px;
-    color: white;
-    text-align: center;
 }
 
 footer  {
@@ -78,10 +83,10 @@ footer p {
 .container {
     max-width: 1240px;
     margin: 0 auto; /* to center the element! */
-    background-color:white; /*remove later! */
-    display: flex;
+    /* background-color:white; remove later! */
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .container-small {
@@ -91,6 +96,55 @@ footer p {
 }
 
 /* header area*/
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+
+.logo {
+    width: 50%;
+    order: 1;
+}
+
+.logo-img {
+    max-width: 150px;
+}
+
+.cart {
+    width: 50%;
+    order: 2;
+    text-align: right;
+}
+
+.cart-img {
+    max-width: 60px;
+}
+
+.nav-container {
+    order: 3;
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container .nav {
+    width: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container .nav  a {
+    padding: 5px;
+}
+
  header section {
     padding-left: 10px;
     padding-right: 10px; 
@@ -246,14 +300,6 @@ link:hover {
     justify-content: center;
 }
 
-.logo {
-    width: 175px;
-}
-
-.cart {
-    width: 65px;
-}
-
 .nav {
     display: flex;
     margin: 15px;
@@ -262,13 +308,24 @@ link:hover {
     padding-right: 100px;
     padding-bottom: 15px;
     flex-direction: row;
-    width: 90%;
+    max-width: 90%;
     justify-content: space-evenly;
 }
 
 
 .nav-container {
     flex-grow: 1;  
+}
+
+.lovedpro-container {
+    border: 0.5 px dotted #969696;
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    color: #b64036
 }
 
 .footercopyright p {
@@ -332,7 +389,7 @@ form{
 
 input {
     border-radius: 25px;
-    background-color:#b64036;
+    background-color: #b64036;
     background-size: 70%;
     padding: 20px;
     min-width: 170px;
@@ -350,48 +407,104 @@ body {
     color: white;
 }
 
+/* mobile style */
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+}
+
+
+/*@media (min-width: 600px){
+     /*tablet css */
+
+     /* media query example */
+/*@media screen and (min-width: 600px) {*/
+/* .carousel-cell {
+      width: 20%;
+    }
+} */
+
+.container {
+     /* max-width: 50%; */
+}
+
+.container-small {
+    width: 50%;
+}
+
+.style p {
+    max-width: 50%;
+}
+
+.nav {
+    width: 50%;
+}
+
+.bannerheader {
+    padding: 0px;
+}
+
+.product-item {
+    width: 50%;
+}
+    
+ .product-item-square {
+    width: 50%
+}
+    
+.updates {
+        font-size: 14px;
+}
+
+.updates p {
+    max-width: 50%;
+    font-size: 14px;
+}
+
+.footer {
+    font-size: 14px;
+}
+
 
 
 @media (min-width: 600px){
-     /*tablet css */
-
-    .container {
-        max-width: 50%;
-    }
-
-     .container-small {
-        width: 50%;
-     }
-
-     .style p {
-       max-width: 50%;
-     }
-    .nav {
-        width: 50%;
-    }
-    .bannerheader {
-        padding: 0px;
+    
+.logo {
+    width: 15%;
+    order: 1;
 }
-    .product-item {
-        width: 50%;
-    }
-    .product-item-square {
-        width: 50%
-    }
-    .updates {
-        font-size: 14px;
-    }
-    .updates p {
-        max-width: 50%;
-        font-size: 14px;
-    }
-    .footer {
-        font-size: 14px;
-    }
+
+.logo-img {
+    max-width: 150px;
+}
+
+.cart {
+    width: 15%;
+    order: 3;
+    text-align: right;
+}
+
+.cart-img {
+    max-width: 60px;
+}
+
+.nav-container {
+    order: 2;
+    width: 70%;
+}
+
+.nav-container .nav {
+    width: 100%;
+}
+
+.nav-container .nav  a {
+    padding: 5px;
+}
+
+}
 
 
-
-@media (min-width: 1240px){
+/*@media (min-width: 1240px){
     /* desktop and larger css */
-}
+/* } */
 
