@@ -12,6 +12,10 @@
  
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Flickity CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- Flickity JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -32,8 +36,6 @@
 
     <img class="cart" src="images/cart-icon.svg" alt="cart icon">
   </header>
-
-
   
   <section class="bannerheader">
       <h2>NEW COLLECTION</h2>
@@ -62,14 +64,46 @@
   </section>
 
   <section class="loved products">
-    <div class="lovedpro">
-      <h2><em>Most-Loved</em> <span>Products</span></h2>
+    <div class="lovedpro-container">
+      <h2><em>Most-Loved</em><span> Products</span></h2>
+    </div>
+    <div class="main-carousel">
+      <div class="strechknitdress carousel-cell">
+          <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" width="230" height="300" />
+          <p class="loved-pro" >Dresses</p>
+          <h4>Stretch Knit Dress</h4>
+          <p>$169.00</p>
+        <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      <div class="cottonblueshirt carousel-cell">
+          <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt" width="230" height="300" />
+
+          <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      <div class="checkeredstrecheddress carousel-cell">
+          <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress" width="230" height="300" />
+          <p class="lovedpro" ></p>
+          <!-- product html here e.g. image, category, title & price  -->
+      </div>
+       <div class="bluehipsterbackpack carousel-cell">
+          <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      <div class="denimoverallshorts carousel-cell">
+          <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      <div class="pinkdotteddress carousel-cell">
+            <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      <div class="bluesilkdress carousel-cell">
+              <!-- product html here e.g. image, category, title & price  -->
+      </div>
+      </div>
     </div>
   </section>
 
   <section class="subscribe" id="subscribe">
    <div class="updates">
-     <h2>Sign-up for<span>Updates</span></h2>
+     <h2>Sign-up for <span>Updates</span></h2>
      <p>Stay updated on our latest product release, be first to find out about upcoming sales, and
        get free style tips from our blog. Unsubscribe at anytime. </p>
     <form method="post">
@@ -86,7 +120,7 @@
       <p>Powered by HTML and CSS.</p>
     </div>
     <div class="footerwebsite">
-      <p>604-604-6040.<a href="info@alohaapparel.com">info@alohaapparel.com</a> </p>
+      <p>604-604-6040. <a href="info@alohaapparel.com">info@alohaapparel.com</a></p>
     </div>
     <div class="addy">
       <p>1490 W Broadway</p>
@@ -103,9 +137,7 @@
   </div>
 </footer>
 
-
-  
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

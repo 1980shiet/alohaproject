@@ -3,6 +3,7 @@
      /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -17,19 +18,23 @@ p {
     text-align: center;
     font-size: 23px;
     color: black;
+    margin: 0% auto;
 }
-
 
 h2 {
     font-size:45px;
-    padding: 35px;
+    padding: 25px;
     color: black;
     text-align: center;
     font-family: 'Playfair Display';
 }
 
 .style p {
-    padding: 30px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
 }
 
 h3 {
@@ -42,7 +47,7 @@ footer  {
     display:flex;
     padding-top: 70px;
     padding-left: 90px;
-    padding-right: 90px;
+    padding-right: 155px;
     margin-top: 10px;
     font-size: 16px;
     background-color: #242424;
@@ -64,7 +69,7 @@ footer p {
     color: white;
     padding-bottom: 15px;
     display: inline-block;
-    width: 15px;
+    width: 28px;
     justify-content: space-around;
 }
 
@@ -104,26 +109,27 @@ header a {
 /*banner area */
 .bannerheader {
     border-top: 1px solid #d7d7d7;
-    padding: 290px;
-    height: 150px;
-    background-image: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-    background-repeat: no-repeat, no-repeat; 
-    background-position: center 100px, bottom;
-    background-size: contain, cover;
+    padding: 210px;
+    /* height: 150px; / */
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat; 
+    background-position: center, center 100px, center;
+    background-size: cover, contain, cover;
     position: relative;
 }
 
 .bannerheader h2 {
     color: white;  
     padding: 40px;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
 .bannerheader h3 {
     color: white;
     font-family: 'Playfair Display';
-    font-size:65px;
+    font-size:60px;
+    text-align: center;
 }
 
 a {
@@ -147,7 +153,7 @@ link:hover {
 }
 
 .product-item {
-    max-width: 50%;
+    max-width: 100%;
     width:100%;
 }
 
@@ -159,7 +165,8 @@ link:hover {
     /* max-width: 50%; */
     padding: 175px 0;
     color: white;
-    border-right: 4x solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
     display: flex;
     background-image: url(../images/mens-category.jpg);
     background-repeat: no-repeat;
@@ -172,6 +179,8 @@ link:hover {
     /* max-width: 25%; */
     padding: 175px 0;
     border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/trends-category.jpg);
@@ -198,6 +207,7 @@ link:hover {
     /* max-width: 25%; */
     padding: 175px 0;
     border-right: 4px solid white;
+    border-top: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/sale-category.jpg);
@@ -212,6 +222,7 @@ link:hover {
     padding: 175px 0;
     border-right: 4px solid white;
     border-left: 4px solid white;
+    border-top: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/bags-category.jpg);
@@ -225,6 +236,7 @@ link:hover {
     /* max-width: 50%; */
     padding: 175px 0;
     border-left: 4px solid white;
+    border-top: 4px solid white;
     color: white;
     display: flex;
     background-image: url(../images/womens-category.jpg);
@@ -282,7 +294,7 @@ link:hover {
 }
 
 .updates {
-    min-height: 340px;
+    min-height: 340px;;
     margin-bottom: 10px;
     padding: 20px;
     background-image: url(../images/wave-bkgd.jpg);
@@ -300,21 +312,31 @@ link:hover {
 
 .updates p{
     padding-bottom: 12px;
+    margin: 0 auto;
+    max-width: 800px;
     font-size: 1.3rem;
     color: white;
     display: flex;
     justify-content: center;
 }
 
-.updates-form {
-    font-size: 20px;
-    color:white;
+form{
+    color: white;
+    margin: auto;
+    width: 25%;
+    display: center;
+    min-height: 25px;
+    position: relative;
 }
 
+
 input {
-    background-color: white;
-    font-size: 25px;
-    background-color: #b64036;
+    border-radius: 25px;
+    background-color:#b64036;
+    background-size: 70%;
+    padding: 20px;
+    min-width: 170px;
+    position: absolute;
 }
 
 
@@ -328,11 +350,48 @@ body {
     color: white;
 }
 
-.loved-products {
-    padding: 0px;
+
+
+@media (min-width: 600px){
+     /*tablet css */
+
+    .container {
+        max-width: 50%;
+    }
+
+     .container-small {
+        width: 50%;
+     }
+
+     .style p {
+       max-width: 50%;
+     }
+    .nav {
+        width: 50%;
+    }
+    .bannerheader {
+        padding: 0px;
 }
+    .product-item {
+        width: 50%;
+    }
+    .product-item-square {
+        width: 50%
+    }
+    .updates {
+        font-size: 14px;
+    }
+    .updates p {
+        max-width: 50%;
+        font-size: 14px;
+    }
+    .footer {
+        font-size: 14px;
+    }
 
 
 
-
+@media (min-width: 1240px){
+    /* desktop and larger css */
+}
 
