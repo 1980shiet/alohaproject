@@ -198,9 +198,10 @@ a:hover {
     color: #b64036;
 }
 
-link:hover {
-    color: #b64036;
+link:hover a {
+    color:  c;
 }
+
 
 .alohaproducts-container {
     display: flex;
