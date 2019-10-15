@@ -20,7 +20,7 @@
 
 <body>
   <!--website banner-->
-  <header class="container site-header">
+  <header href id="#top" class="container site-header">
     <div class="logo">
       <img class="logo-img" src="images/aloha-logo.svg" alt="aloha Apparel.co">
     </div>
@@ -29,9 +29,9 @@
       <nav>
         <ul class="nav">
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#Shop">SHOP</a></li>
-          <li><a href="#Featured">FEATURED</a></li>
-          <li><a href="#Updates">UPDATES</a></li>
+          <li><a href="#shop">SHOP</a></li>
+          <li><a href="#featured">FEATURED</a></li>
+          <li><a href="#updates">UPDATES</a></li>
         </ul>
       </nav>
     </section>
@@ -42,23 +42,25 @@
   </header>
   
   <section class="bannerheader">
+    <div class="banned-container">
       <h2>NEW COLLECTION</h2>
       <h3>Spring/Summer 2019</h3>
+    </div>
   </section>
 
-  <section>
+  <section id="about">
     <div class="style">
-      <h2>Hand-Crafted <span>Styles</span></h2>
+      <h2>Hand-Crafted <strong>Styles<strong</h2>
       <p>Aloha Apparel Co. sells  only the finest ready-to-travel clothing. Browse our current
          selection of products or sign-up for updates below.</p>
       </h2>
   </section>
 
-  <section class="alohaproducts" id="alohaproducts">
+  <section class="alohaproducts" id="shop">
     <div class="aloproducts">
     <ul class="alohaproducts-container">
       <li class="product-item"><a class="mens-image" href="alohaproducts">MEN'S</a></li>
-      <li class="product-item product-item-square"><a class="trends-image" href=alohaproducts>TRENDS</a></li>
+      <li class="product-item product-item-square"><a class="trends-image" href="#alohaproducts">TRENDS</a></li>
       <li class="product-item product-item-square"><a class="glasses-image" href="alohaproducts">GLASSES</a></li>
       <li class="product-item product-item-square"><a class="sale-image" href="alohaproducts">SALE</a></li>
       <li class="product-item product-item-square"><a class="bags-image" href="alohaproducts">BAGS</a></li>
@@ -69,63 +71,63 @@
 
   <section class="loved products">
     <div class="lovedpro-container">
-      <h2><em>Most-Loved</em><span> Products</span></h2>
+      <h2>Most-Loved <strong>Products</strong></h2>
     </div>
     <div class="main-carousel">
     <div class="strechknitdress carousel-cell">
         <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress" width="250" height="250" />
         <p class="loved-pro">DRESSES</p>
         <h4>Stretch Knit Dress</h4>
-        <p>$169.00</p>
+        <p class="cash-pro">$169.00</p>
         <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="cottonblueshirt carousel-cell">
         <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt" width="250" height="250" />
         <p class="loved-pro">SHIRTS</p>
         <h4>Cotton Blue Shirts</h4>
-        <p>$89.00</p>
+        <p class="cash-pro">$89.00</p>
         <!-- product html here e.g. image, category, title & price  -->
       </div>
-      <div class="checkeredstrecheddress carousel-cell">
+      <div class="checkeredstretchdress carousel-cell">
         <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress" width="250" height="250" />
-        <p class="lovedpro">DRESSES</p>
-        <h4>Checkered Streched Dress</h4>
-        <p>$129.00</p>
+        <p class="loved-pro">DRESSES</p>
+        <h4>Checkered Stretch Dress</h4>
+        <p class="cash-pro">$129.00</p>
         <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="bluehipsterbackpack carousel-cell">
          <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack" width="250" height="250"/>
-         <p class="lovedpro">BAGS</p>
+         <p class="loved-pro">BAGS</p>
          <h4>Blue Hipster Bag</h4>
-         <p>$69.00</p>
+         <p class="cash-pro">$69.00</p>
           <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="denimoverallshorts carousel-cell">
         <img src="images/demin-overall-shorts.jpg" alt="denim-overall-shorts" width="250" height="250"/>
-        <p class="lovedpro">Denim</p>
+        <p class="loved-pro">Denim</p>
         <h4>Denim Overall Shorts</h4>
-        <p>$89.00</p>
+        <p class="cash-pro">$89.00</p>
           <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="pinkdotteddress carousel-cell">
         <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress" width="250" height="250" />
-        <p class="lovedpro">DRESSES</p>
+        <p class="loved-pro">DRESSES</p>
         <h4>Pink Dotted Dress</h4>
-        <p>$99.00</p>
+        <p class="cash-pro">$99.00</p>
             <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="bluesilkdress carousel-cell">
         <img src="images/blue-silk-dress.jpg" alt="blue-silk-dress" width="250" height="250" />
-        <p class="lovedpro">DRESSES</p>
+        <p class="loved-pro">DRESSES</p>
         <h4>Blue Silk Dress</h4>
-        <p>$119.00</p>
+        <p class="cash-pro">$119.00</p>
               <!-- product html here e.g. image, category, title & price  -->
       </div>
       <div class="cottonyellowshirt carousel-cell">
         <img src="images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-shirt" width="250" height="250" />
-        <p class="lovedpro">SHIRTS</p>
+        <p class="loved-pro">SHIRTS</p>
         <h4>Cotton Yellow Shirt</h4>
-        <p>$39.00</p>
+        <p class="cash-pro">$39.00</p>
           <!-- product html here e.g. image, category, title & price  -->
       </div>
     </div>
@@ -133,15 +135,12 @@
 
   <section class="subscribe" id="subscribe">
    <div class="updates">
-     <h2>Sign-up for <span>Updates</span></h2>
+     <h2>Sign-up for <strong>Updates<strong></strong></h2>
      <p>Stay updated on our latest product release, be first to find out about upcoming sales, and
        get free style tips from our blog. Unsubscribe at anytime. </p>
     <form method="post">
     <input type="email" placeholder="your email" name="user-email">
-    <button class="sub-button">
     <input type="submit" value="subscribe">
-    </button>
-  
     </form>
    </div>
   </section>
