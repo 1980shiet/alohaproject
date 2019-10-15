@@ -402,6 +402,7 @@ footer  {
     color: white;
     min-height: 325px;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footercopyright p {
@@ -410,7 +411,7 @@ footer  {
 }
 
 .footerbottom p {
-    text-align: left;
+    text-align:  center;
     font-size: 16px;
 }
 
@@ -428,6 +429,7 @@ footer  {
 
 footer a{
     color: white;
+    display: flex
 }
 
 footer p {
@@ -440,6 +442,14 @@ footer p {
     display: inline-block;
     width: 28px;
     justify-content: space-around;
+}
+
+.socialmedialogos ul  {
+    display: flex;
+}
+
+.socialmedialogos ul span {
+    display: none;
 }
 
 p {
@@ -482,7 +492,6 @@ p {
 }
 
 .bannerheader {
-    min-width: 350px, 100px;
     min-height: 550px;
 }
 
@@ -501,10 +510,6 @@ p {
 
 .updates p {
     max-width: 50%;
-    font-size: 14px;
-}
-
-.footer {
     font-size: 14px;
 }
 
@@ -534,6 +539,13 @@ p {
     width: 70%;
 }
 
+
+.nav-container .nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .nav-container .nav {
     width: 100%;
 }
@@ -541,7 +553,6 @@ p {
 .nav-container .nav  a {
     padding: 5px;
 }
-
 
 .product-item {
     width: 50%;
@@ -559,11 +570,21 @@ p {
     width: 50%;
 }
 
-footer  {
-    flex-direction: row;
-    align-content: center;
+.socialmedialogos ul  {
+    flex-direction: column;
 }
 
+.socialmedialogos ul span {
+    display: block;
+}
+
+footer {
+    flex-direction: row;
+}
+
+.footerbottom p {
+    text-align: left;
+}
 }
 
 @media (min-width: 1240px){
