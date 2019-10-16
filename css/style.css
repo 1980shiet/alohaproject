@@ -184,7 +184,8 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     font-size: 38px;
-    font-family: 'Raleway light';   
+    font-family: 'Raleway';
+    font-weight: normal;
 }
 
 .product-item {
@@ -326,6 +327,7 @@ a:hover {
 h4 {
     font-size: 24px;
     font-family: 'Playfair Display';
+    font-weight: normal;
     color: #e2574c;
     margin: 8px;
     padding: 8px;
@@ -368,8 +370,7 @@ h4 {
     justify-content: center, right;
     align-content: center,right;
     position: absolute;
-
-}
+} 
 
 /*input { 
     border-radius: 25px;
@@ -429,7 +430,7 @@ footer  {
 
 footer a{
     color: white;
-    display: flex
+    display: flex;
 }
 
 footer p {
