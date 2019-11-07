@@ -22,6 +22,7 @@
   <!--website banner-->
   <header href id="#top" class="container site-header">
     <div class="logo">
+      <h1 class="screen-reader-text">Aloha Apparel Co.</h1>
       <img class="logo-img" src="images/aloha-logo.svg" alt="aloha Apparel.co">
     </div>
     
@@ -51,7 +52,7 @@
   <section id="about">
     <div class="style">
       <h2>Hand-Crafted <strong>Styles<strong</h2>
-      <p>Aloha Apparel Co. sells  only the finest ready-to-travel clothing. Browse our current
+      <p>Aloha Apparel Co. sells  only the finest ready-to-travel clothing.  Browse our current
          selection of products or sign-up for updates below.</p>
       </h2>
   </section>
@@ -138,9 +139,11 @@
      <h2>Sign-up for <strong>Updates<strong></strong></h2>
      <p>Stay updated on our latest product release, be first to find out about upcoming sales, and
        get free style tips from our blog. Unsubscribe at anytime. </p>
-    <form method="post">
-    <input type="email" placeholder="your email" name="user-email">
-    <input type="submit" value="subscribe">
+    <form class="subscribe-form"  method="post">
+    <div class="input-wrapper">
+    <input class="email-button" type="email" placeholder="Your Email" name="user-email">
+    <input class="submit-button" type="submit" value="subscribe">
+    </div>
     </form>
    </div>
   </section>
