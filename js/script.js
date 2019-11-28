@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   const subbtn = document.getElementById("subscribe-form");
-  console.log(subbtn);
-  subbtn.addEventListener("submit", myFunction);
-  function myFunction(event) {
-    event.preventDefault();
-    //alert("howdy");
-    const email = document.getElementById("email").value;
-    console.log(email);
-  }
+  subbtn.addEventListener("submit", validateEmail);
 });
+
+function validateEmail(event) {
+  event.preventDefault();
+  const email = document.getElementById("email").value;
+  if (email !== "") {
+    alert("Thanks for subscribing");
+  } else {
+    alert("Please submit a valid email");
+  }
+}
