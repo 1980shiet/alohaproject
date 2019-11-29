@@ -191,16 +191,21 @@ a:hover {
 .alohaproducts-container {
   display: flex;
   flex-wrap: wrap;
-  font-size: 19px;
-  font-family: sans-serif;
-  font-weight: normal;
+  font-size: 22px;
+  font-family: "Raleway Web", sans-serif;
+  font-weight: 400;
 }
 
 .product-item {
   max-width: 100%;
   width: 100%;
-  height: 35vh;
+  height: 55vh;
+  font-size: 22px;
 }
+
+/*.product-item a {
+  padding: 175px 0;
+}*/
 
 .product-item-square {
   max-width: 50%;
@@ -577,6 +582,8 @@ p {
 
   .product-item {
     width: 50%;
+    height: 35vh;
+    font-size: 28px;
   }
 
   .product-item-square {
@@ -609,6 +616,12 @@ p {
 }
 
 @media (min-width: 1240px) {
+  .product-item {
+    height: 75vh;
+    font-size: 38px;
+    font-weight: 400;
+  }
+
   /* desktop and larger css */
   .carousel-cell {
     width: 25%;
